@@ -46,6 +46,9 @@ button {
   margin-left: 164px;
   margin-right: 163px;
   margin-top: 40px;
+  border: 1px;
+  border: currentColor;
+  border-radius: 4px;
 }
 h2 {
   font-size: 36px;
@@ -89,8 +92,8 @@ main {
   flex-grow: 1;
 }
 
-.address:hover,
-.address:active {
+.address .link:hover,
+.address .link:active {
   color: var(--iris);
 }
 
@@ -135,8 +138,8 @@ main {
   white-space: nowrap;
 }
 
-.navi:hover,
-.navi:active {
+.navi .link:hover,
+.navi .link:active {
   color: var(--ocean);
 }
 
@@ -196,6 +199,11 @@ main {
   background-color: white;
 }
 
+.section-4 {
+  border: 1px;
+  color: var(--cornflower);
+}
+
 .section-4 .images {
   width: 360px;
   height: 300px;
@@ -233,7 +241,7 @@ main {
 }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .container .logo {
