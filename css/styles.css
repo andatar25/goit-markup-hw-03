@@ -91,8 +91,8 @@ address {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-left: 156px;
-  margin-right: 156px;
+  /* margin-left: 156px;
+  margin-right: 156px; */
 }
 .logo,
 .footer-logo {
@@ -143,8 +143,8 @@ address {
 .section-1 .container {
   padding-top: 188px;
   padding-bottom: 188px;
-  margin-left: 156px;
-  margin-right: 156px;
+  /* margin-left: 156px;
+  margin-right: 156px; */
 
   display: flex;
   flex-direction: column;
@@ -156,12 +156,12 @@ address {
 }
 
 .section-2 .container {
-  margin: 0px 156px;
+  /* margin: 0px 156px; */
   padding: 120px 0px;
 
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  /* flex-direction: row;
+  justify-content: center; */
 }
 
 .section-3 {
@@ -187,8 +187,8 @@ address {
 
 .section-3 .container {
   padding: 120px 0px;
-  margin-left: 156px;
-  margin-right: 156px;
+  /* margin-left: 156px;
+  margin-right: 156px; */
 }
 .section-3 .h2 {
   padding-top: 120px;
@@ -220,16 +220,18 @@ address {
 
 .section-4 .container {
   padding: 120px 0px;
-  margin-left: 156px;
-  margin-right: 156px;
+  flex-wrap: wrap;
+  /* margin-left: 156px;
+  margin-right: 156px; */
 
   flex-basis: calc((100% - 24px) / 6);
 }
 .section-4 .container .list {
+  display: flex;
   flex-wrap: wrap;
 }
 .section-4 .container .list-item {
-  width: 340px;
+  width: 360px;
   height: 420px;
 }
 
@@ -258,7 +260,7 @@ address {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 40px;
+  gap: 24px;
 }
 
 .footer {
@@ -275,8 +277,8 @@ address {
 .footer .container {
   padding-top: 100px;
   padding-bottom: 100px;
-  margin-left: 156px;
-  margin-right: 156px;
+  /* margin-left: 156px;
+  margin-right: 156px; */
 }
 .container .footer-text {
   width: 264px;
