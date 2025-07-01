@@ -14,25 +14,16 @@ body,
 footer {
   font-family: "Roboto", sans-serif;
 }
-header {
-  width: 1440px;
-  height: 72px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-html {
-  width: 1440px;
-}
-h1 {
+
+.h1 {
   font-size: 56px;
   font-weight: bold;
   color: white;
   line-height: 1.07;
   text-align: center;
   width: 496px;
-  height: 120px;
 }
-button {
+.button {
   width: 169px;
   height: 56px;
   color: white;
@@ -43,29 +34,28 @@ button {
   cursor: pointer;
   border: none;
   padding: 16px 32px;
-  margin-left: 164px;
-  margin-right: 163px;
+
   margin-top: 40px;
   border: 1px;
   border: currentColor;
   border-radius: 4px;
 }
-h2 {
+.h2 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
 }
 
-h3 {
+.h3 {
   font-size: 20px;
-  font-weight: 500; /* Düzeltilmiş: medium yerine */
+  font-weight: 500;
   color: var(--navy-blue);
   margin-bottom: 8px;
 }
 
 p {
   font-size: 16px;
-  font-weight: normal; /* Düzeltilmiş: regular yerine */
+  font-weight: normal;
   color: var(--slate);
 }
 
@@ -79,7 +69,6 @@ address {
   color: var(--navy-blue);
   letter-spacing: 0.32px;
   line-height: 1.5;
-  margin-right: 156px;
 }
 
 .page-container {
@@ -88,7 +77,7 @@ address {
   flex-direction: column;
 }
 
-main {
+.main {
   flex-grow: 1;
 }
 
@@ -97,9 +86,13 @@ main {
   color: var(--iris);
 }
 
-.page-header {
+.header .container {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 .logo,
 .footer-logo {
@@ -121,14 +114,14 @@ main {
   color: var(--navy-blue);
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.32;
+  letter-spacing: 0.32px;
   line-height: 1.5;
   display: flex;
-  margin-right: 356px;
+  margin-right: 332px;
 }
 
-.navi ul,
-.address ul {
+.navi .list,
+.address .list {
   justify-content: center;
   align-items: center;
 }
@@ -145,19 +138,17 @@ main {
 
 .section-1 {
   background-color: var(--navy-blue);
-  width: 1440px;
-  height: 600px;
 }
 
 .section-1 .container {
   padding-top: 188px;
-  padding-left: 472px;
-  padding-right: 472px;
+  padding-bottom: 188px;
+  margin-left: 156px;
+  margin-right: 156px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex-grow: 1;
 }
 
 .button:hover {
@@ -165,32 +156,41 @@ main {
 }
 
 .section-2 .container {
-  margin: 120px 156px;
-  width: calc((100%-24px) / 4);
+  margin: 0px 156px;
+  padding: 120px 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .section-3 {
   background-color: var(--cloud);
 }
 
-.section-3 .images {
+.section-3 .list-item {
   width: 264px;
   height: 260px;
+  background-color: white;
 }
 
 .section-3 .container .list {
-  padding: 120px 156px;
   padding-top: 72px;
 }
 
-.section-3 h3 {
+.section-3 .h3 {
   margin-top: 32px;
 }
 .section-3 p {
   margin-bottom: 32px;
 }
 
-.section-3 h2 {
+.section-3 .container {
+  padding: 120px 0px;
+  margin-left: 156px;
+  margin-right: 156px;
+}
+.section-3 .h2 {
   padding-top: 120px;
 }
 
@@ -200,7 +200,7 @@ main {
 }
 
 .section-4 {
-  border: 1px;
+  border: 1px solid;
   color: var(--cornflower);
 }
 
@@ -209,23 +209,27 @@ main {
   height: 300px;
 }
 
-.section-4 h3 {
+.section-4 .h3 {
   margin-top: 32px;
 }
 
-.section-4 h2 {
+.section-4 .h2 {
   margin-bottom: 72px;
+  color: var(--navy-blue);
 }
 
 .section-4 .container {
-  padding: 120px 156px;
+  padding: 120px 0px;
+  margin-left: 156px;
+  margin-right: 156px;
+
   flex-basis: calc((100% - 24px) / 6);
 }
 .section-4 .container .list {
   flex-wrap: wrap;
 }
 .section-4 .container .list-item {
-  width: 320px;
+  width: 340px;
   height: 420px;
 }
 
@@ -242,15 +246,14 @@ main {
 
 .container {
   margin: 0 auto;
+  width: 1158px;
 }
 
 .container .logo {
   margin-right: 76px;
-  margin-left: 156px;
 }
 
-ul,
-ol {
+.list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -258,25 +261,30 @@ ol {
   gap: 40px;
 }
 
-footer {
+.footer {
   background-color: var(--navy-blue);
-  width: 1440px;
-  height: 312px;
 }
 
 .footer-logo > span {
   color: var(--cloud);
 }
 
-footer > .footer-text {
+.footer > .footer-text {
   color: var(--cloud);
 }
-footer .container {
+.footer .container {
   padding-top: 100px;
-  padding-left: 156px;
+  padding-bottom: 100px;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 .container .footer-text {
   width: 264px;
   color: var(--cloud);
   padding-top: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1158px;
 }
